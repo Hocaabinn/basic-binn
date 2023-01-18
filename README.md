@@ -1,0 +1,11 @@
+# basic-binntanggg "menangkap telur"
+- baris 1-3 menjelaskan tentang import tools
+- baris 4-5 menjelaskan tentang tinggi lebar layar
+- baris 9-13 menjelaskan tentang memberikan nama game dan warna,bentuk,ukuran telur
+- baris 15-28 menjelaskan tentang  warna,bentuk,ukuran  yang diberikan pada wadah telur dan telur, menjelaskan juga tentang kecepatan telur
+- baris 30-36 menjelaskan tentang skor,text,name font,dan config
+- baris 38-58 menjelaskan tentang nyawa yang diberikan di game tersebut dan menjelaskan tentang gerak pindah nya telur
+- baris 60-66 menjelaskan tentang jatuhnya telur yang akan mengurangi score sampai final score akan muncul tulisan game over
+- baris 73-81 menejelaskan tentang mengeluarkan penangkap telur
+- baris 83-88 menjelaskan tentang menambahkan skor saat menanangkap telur
+- baris 90-98 menjelaskan tentang penangkap telur kiri ke kanan 
