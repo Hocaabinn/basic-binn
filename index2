@@ -1,1 +1,70 @@
 
+<?php 
+include("../conf/config.php");
+$query = mysqli_query($koneksi,"SELECT id,
+(SELECT count(id) FROM tb_mikasa WHERE status='Aktif')AS Aktif,
+(SELECT count(id) FROM tb_mikasa WHERE status='Lulus')AS Lulus
+ FROM tb_mikasa");
+$view = mysqli_fetch_array($query);?>
+<div class="col-lg-3 col-7">
+    <!-- small box -->
+    <div class="small-box bg-info">
+        <div class="inner">
+            <h3><?php echo $view['Aktif'];?></h3>
+
+            <p>Mahasiswa Aktif</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-bag"></i>
+        </div>
+        <a href="index.php?page=data-mahasiswa" class="small-box-footer">More info <i
+                class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<!-- ./col -->
+<div class="col-lg-3 col-6">
+    <!-- small box -->
+    <div class="small-box bg-success">
+        <div class="inner">
+            <h3><?php echo $view['Lulus'];?><sup style="font-size: 20px"></sup></h3>
+
+            <p>Mahasiswa Lulus</p>
+        </div>
+        <div class="icon">
+            <i class="fa fa-graduation-cap"></i>
+        </div>
+        <a href="index.php?page=data-mahasiswa" class="small-box-footer">More info <i
+                class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<!-- ./col -->
+<div class="col-lg-3 col-6">
+    <!-- small box -->
+    <div class="small-box bg-warning">
+        <div class="inner">
+            <h3>44</h3>
+
+            <p>Total Mahasiswa</p>
+        </div>
+        <div class="icon">
+            <i class="fa fa-user-secret"></i>
+        </div>
+        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<!-- ./col -->
+<div class="col-lg-3 col-6">
+    <!-- small box -->
+    <div class="small-box bg-danger">
+        <div class="inner">
+            <h3>65</h3>
+
+            <p>Unique Visitors</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-pie-graph"></i>
+        </div>
+        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<!-- ./col -->
